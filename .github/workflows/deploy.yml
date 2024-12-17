@@ -27,7 +27,7 @@ jobs:
             cd simpleapp
             git checkout main
             git pull
-            nohup python3 simpleapp/server.py > log.txt 2>&1 &
+            nohup python3 server.py > log.txt 2>&1 &
           EOF
 
           rm -f private_key.pem # Remove the private key file after use for security
